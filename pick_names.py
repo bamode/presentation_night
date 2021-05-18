@@ -6,7 +6,8 @@ while name != "":
     name = input("Enter name: ")
     if name != "":
         participants.append(name)
-index = np.random.choice(len(participants), len(participants), replace=False)
+num = len(participants)
+index = np.random.choice(num, num, replace=False)
 participants = np.asarray(participants)
 print("\nOrder: ")
 for i in index:
